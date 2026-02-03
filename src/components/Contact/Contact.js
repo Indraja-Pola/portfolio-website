@@ -6,8 +6,13 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { RiLinkedinFill, RiMailLine, RiGithubFill, RiMenu2Fill  } from "react-icons/ri";
-import {HiOutlineLocationMarker} from  "react-icons/hi";
+import {
+  RiLinkedinFill,
+  RiMailLine,
+  RiGithubFill,
+  RiMenu2Fill,
+} from "react-icons/ri";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -41,7 +46,7 @@ const Contact = () => {
             progress: undefined,
           });
           console.log("FAILED...", error.text);
-        }
+        },
       );
   };
   return (
@@ -59,14 +64,13 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              {/* <img src={mail_icon} alt="" /> */}
               <RiMailLine />
 
               <p>indrajapola@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <HiOutlineLocationMarker/>
-              {/* <img src={location_icon} alt="" /> */}
+              <HiOutlineLocationMarker />
+
               <p>Hyderabad, Telangana, India</p>
             </div>
             <div className="git">

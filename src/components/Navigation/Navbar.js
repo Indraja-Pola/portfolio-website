@@ -4,11 +4,10 @@ import logo from "../../assets/icon-portfolio.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import contact from "../../assets/contact.png";
 import { RiMenuFoldFill, RiMenuAddFill } from "react-icons/ri";
-import menu from '../../assets/menu_open.svg'
+import menu from "../../assets/menu_open.svg";
 
 const Navbar = () => {
-
-  const [showMenu, setShowMenu]= useState(false)
+  const [showMenu, setShowMenu] = useState(false);
   const scrollToTop = () => {
     scroll.scrollToTop(); // Function to scroll to the top
   };
@@ -70,52 +69,56 @@ const Navbar = () => {
         Contact Me
       </Link>
 
-        <img src= {menu} alt="menu" className="mobilemenu"  onClick={()=>setShowMenu(!showMenu)} />
-        <div className="navMenu" style={{display: showMenu? 'flex': 'none'}}>
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="listItem"
-            onClick={()=>setShowMenu(false)}
-           
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-10}
-            duration={500}
-            className="listItem"
-          >
-            About Me
-          </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="listItem"
-          >
-            Projects
-          </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="listItem"
-          >
-            Contact
-          </Link>
-        </div>
+      <img
+        src={menu}
+        alt="menu"
+        className="mobilemenu"
+        onClick={() => setShowMenu(!showMenu)}
+      />
+      <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="listItem"
+          onClick={() => setShowMenu(false)}
+        >
+          Home
+        </Link>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={500}
+          className="listItem"
+        >
+          About Me
+        </Link>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="listItem"
+        >
+          Projects
+        </Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="listItem"
+        >
+          Contact
+        </Link>
+      </div>
     </nav>
   );
 };

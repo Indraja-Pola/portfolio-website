@@ -1,16 +1,9 @@
-import React from 'react'
-import './footer.css'
+import React from "react";
+import "./footer.css";
 const Footer = () => {
   return (
-    <div className='footer'>
-       
-        © 2024 by Indraja.P| All Rights Reserved.
+    <div className="footer">© 2024 by Indraja.P| All Rights Reserved.</div>
+  );
+};
 
-     
-        </div>
-      
-  
-  )
-}
-
-export default Footer
+export default Footer;
