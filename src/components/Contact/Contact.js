@@ -66,12 +66,12 @@ const Contact = () => {
             <div className="contact-detail">
               <RiMailLine />
 
-              <p>indrajapola@gmail.com</p>
+              <p>hindu072001@gmail.com</p>
             </div>
             <div className="contact-detail">
               <HiOutlineLocationMarker />
 
-              <p>Hyderabad, Telangana, India</p>
+              <p>Nuneaton, WarwickShire, United Kingdom</p>
             </div>
             <div className="git">
               <div className="github">
@@ -85,7 +85,7 @@ const Contact = () => {
               </div>
               <div className="linkedin">
                 <a
-                  href="https://www.linkedin.com/in/indraja-pola-b566ba242/"
+                  href="https://www.linkedin.com/in/indraja-p/"
                   target="_blank"
                   rel="noreferrer"
                 >

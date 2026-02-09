@@ -4,7 +4,7 @@ import bg from "../../assets/icon-portfolio.png";
 import { Link } from "react-scroll";
 import img from "../../assets/icon-portfolio.png";
 import { DownloadOutlined } from "@ant-design/icons";
-import resumeFile from "../../assets/ExperiencedResume.pdf";
+import resumeFile from "../../assets/MyResume.pdf";
 
 const Home = () => {
   const handleDownload = () => {
